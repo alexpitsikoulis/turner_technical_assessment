@@ -109,7 +109,9 @@ export default class Title extends Component {
         return (
             <div>
                 <h1>{title.titleName} ({title.releaseYear})</h1>
-                <button onClick={this.handleRedirectToSearch}>Back To Search</button>
+                <div id="redirect-button">
+                    <button onClick={this.handleRedirectToSearch}>Back To Search</button>
+                </div>
                 <h2>Genres: {genreList}</h2>
                 <h2 onClick={this.handleToggleShowParticipants}> Participants(+)</h2>
                 {showParticipants ? participantList : null}

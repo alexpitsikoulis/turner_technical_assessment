@@ -5,6 +5,22 @@
     }
 }
 
+body {
+    font-family: 'Oxanium', sans-serif;
+}
+
+header {
+    background: tomato;
+    margin-top: 0;
+    height: 20vh;
+    color: white;
+    padding: 6vh;
+}
+
+header h1 {
+    margin: 0 auto;
+}
+
 h1 {
     text-align: center;
 }
@@ -30,4 +46,8 @@ ul {
 .option-active {
     background: red;
     color: white;
+}
+
+#redirect-button {
+    text-align: center;
 }
