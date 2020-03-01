@@ -48,6 +48,24 @@ ul {
     color: white;
 }
 
+.details {
+    margin: 0 auto;
+    text-align: center;
+}
+
+.details h2 {
+    color: tomato;
+}
+
 #redirect-button {
     text-align: center;
+}
+
+#header-link {
+    color: white;
+}
+
+#search-field {
+    width: 30%;
+    margin: 0 auto;
 }

@@ -117,7 +117,7 @@ export default class Search extends Component {
         }
 
         return (
-            <div>
+            <div id="search-field">
                 <form onSubmit={this.handleSubmit} autoComplete="off">
                     <label htmlFor="title">Title: </label>
                     <input

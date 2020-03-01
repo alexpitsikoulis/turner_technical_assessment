@@ -112,18 +112,20 @@ export default class Title extends Component {
                 <div id="redirect-button">
                     <button onClick={this.handleRedirectToSearch}>Back To Search</button>
                 </div>
-                <h2>Genres: {genreList}</h2>
-                <h2 onClick={this.handleToggleShowParticipants}> Participants(+)</h2>
-                {showParticipants ? participantList : null}
-                {this.state.title.awards ? (
-                    <div>
-                        <h2 onClick={this.handleToggleShowAwards} > Awards (+)</h2>
-                        {showAwards ? awardsList : null}
-                        </div>) : null}
-                <h2 onClick={this.handleToggleShowStorylines} > Storylines (+)</h2>
-                {showStorylines ? storylineList : null}
-                <h2 onClick={this.handleToggleShowOtherNames} > Other Names (+)</h2>
-                {showOtherNames ? otherNameList : null}
+                <div className="details">
+                    <h2>Genres: {genreList}</h2>
+                    <h2 onClick={this.handleToggleShowParticipants}> Participants (+)</h2>
+                    {showParticipants ? participantList : null}
+                    {this.state.title.awards ? (
+                        <div>
+                            <h2 onClick={this.handleToggleShowAwards} > Awards (+)</h2>
+                            {showAwards ? awardsList : null}
+                            </div>) : null}
+                    <h2 onClick={this.handleToggleShowStorylines} > Storylines (+)</h2>
+                    {showStorylines ? storylineList : null}
+                    <h2 onClick={this.handleToggleShowOtherNames} > Other Names (+)</h2>
+                    {showOtherNames ? otherNameList : null}
+                </div>
             </div>
             )
     }
